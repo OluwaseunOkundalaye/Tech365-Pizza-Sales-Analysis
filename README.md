@@ -2,9 +2,9 @@
 An Excel project analyzing a year's worth of sales from a fictitious pizza sales place. The dataset encompasses details such as pizza type, size, quantity, price, and ingredients. The goal is to derive actionable insights to inform strategic decisions and optimize overall operational effectiveness.
 
 ## Table of Contents
-- Project Overview
-- Project Scope
-- Project Objectives
+- [Project Overview](https://github.com/OluwaseunOkundalaye/Tech365-Pizza-Sales-Analysis#project-overview)
+- [Project Scope](https://github.com/OluwaseunOkundalaye/Tech365-Pizza-Sales-Analysis#project-scope)
+- [Project Objectives](https://github.com/OluwaseunOkundalaye/Tech365-Pizza-Sales-Analysis?tab=readme-ov-file#project-objectives)
 - Expected Outcome
 - Document Purpose
 - Use Case
