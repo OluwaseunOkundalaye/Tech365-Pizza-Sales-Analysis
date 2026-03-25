@@ -118,3 +118,23 @@ ORDER BY
 | October    | 4902                   |
 | November   | 4626                   |
 | December   | 4676                   |
+
+
+``` PYTHON
+# Define the number of columns dynamically
+num_cols = data.select_dtypes(include=['number']).columns  # Example numeric columns
+num_plots = len(num_cols)
+
+# Calculate grid size
+rows = (num_plots - 1) // 4 + 1  # Dynamically calculate rows for up to 4 columns per row
+cols = min(4, num_plots)  # Limit columns to 4
+
+plt.figure(figsize=(15, rows * 3))  # Adjust height based on the number of rows
+
+for i, col in enumerate(num_cols, 1):
+    plt.subplot(rows, cols, i)
+    sns.boxplot(x=data[col])
+    plt.title(col)
+
+plt.tight_layout()
+plt.show()
