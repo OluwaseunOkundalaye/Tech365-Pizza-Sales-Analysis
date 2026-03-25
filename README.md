@@ -59,4 +59,62 @@ Stakeholders Benefiting from the Analysis
 This comprehensive analysis equips each stakeholder with the insights needed to drive business growth, improve operational efficiency, and enhance customer satisfaction.
 
 ## Data Source
-The dataset for this project is sourced from Maven Analytics website designed specifically for practice purposes. It is presented in an Excel file with four tables (Order Details, Orders, Pizza Types, and Pizzas) comprising 48,620, 21,350, 32, and 96 rows respectively, and 4, 3, 4, and 4 columns respectively. The dataset includes key attributes essential for a comprehensive analysis, such as:
+The dataset for this project is sourced from Maven Analytics [website](https://app.mavenanalytics.io/datasets?search=pizz) designed specifically for practice purposes. It is presented in an Excel file with four tables (Order Details, Orders, Pizza Types, and Pizzas) comprising 48,620, 21,350, 32, and 96 rows respectively, and 4, 3, 4, and 4 columns respectively. The dataset includes key attributes essential for a comprehensive analysis, such as:
+
+
+![](https://github.com/OluwaseunOkundalaye/Tech365-Pizza-Sales-Analysis/blob/main/Number%20of%20Customers%20Per%20Day.png)
+
+![](https://github.com/OluwaseunOkundalaye/Tech365-Pizza-Sales-Analysis/blob/main/Dashboard.png)
+
+
+_My name is OLuwaseun Okundalaye_
+
+
+```Day Number = WEEKDAY(sales[Date].[Date])```
+
+``` SQL
+UPDATE 
+	Financial_Consumer_Complaints
+SET 
+	Timely_Response = 'In progress'
+WHERE
+	Timely_Response IS NULL
+```
+
+
+```SQL
+SELECT 
+	Month_Name,
+COUNT 
+	(Complaint_ID) AS [Total No of Complaints]
+FROM
+	Financial_Consumer_Complaints
+GROUP BY 
+	Month_Name, 
+	Month_Number
+ORDER BY 
+	Month_Number ASC
+```
+
+| Month Name | Total Sales | Manager |
+| ---------- | ----------- | ------- |
+| Jan | 200 | Young |
+| Feb | 500 | Seun |
+| Mar | 100 | Tope |
+| Apr | 800 | Nelson |
+
+
+| Month_Name | Total No of Complaints |
+|------------|------------------------|
+| January    | 4883                   |
+| February   | 4602                   |
+| March      | 5335                   |
+| April      | 5386                   |
+| May        | 5608                   |
+| June       | 5575                   |
+| July       | 6474                   |
+| August     | 5684                   |
+| September  | 4765                   |
+| October    | 4902                   |
+| November   | 4626                   |
+| December   | 4676                   |
